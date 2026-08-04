@@ -30,12 +30,12 @@ section {
     border-radius: 8px;
 
 }
-
+/* paragraphs */
 p{
     line-height:1.6;
     text-align: justify;
 }
-
+/* table */
 table{
     width: 100px;
     border-collapse: collapse;
