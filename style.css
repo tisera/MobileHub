@@ -63,7 +63,7 @@ tr:nth-child(even){
 tr:hover{
     background-color: #dbeafe;
 }
-
+/ * footer style */
 footer{
     text-align:center;
     margin-top:20px;
