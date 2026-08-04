@@ -1,41 +1,17 @@
-// Mobile Hub - phone comparison
-
-// Display a welcome message in the browser console
-console.log("Welcome to Mobile Hub!");
-
-// Show a welcome alert when the page loads
-window.onload = function () {
-    alert("Welcome to Mobile Hub. Compare smartphones and find the best one for you!");
+const darkBtn =document.getElementById("darkBtn");
+darkBtn.addEventListener("click"), ()=> {
+    document.body.classlist.toggle("dark");
 };
+const changeBtn = document.getElementById("changePhoneBtn");
+let isSmartphone =true;
 
-// Phone information
-const phones = [
-    {
-        name: "Samsung Galaxy S25",
-        camera: "50MP Triple Camera",
-        battery: "5000mAh",
-        use: "Gaming and Multitasking"
-    },
-    {
-        name: "iPhone 16",
-        camera: "48MP Dual Camera",
-        battery: "3561mAh",
-        use: "Video Recording and Daily Use"
-    },
-    {
-        name: "Google Pixel 10",
-        camera: "50MP AI Camera",
-        battery: "5000mAh",
-        use: "Photography and AI Features"
+changeBtn.addEventListener("click", () => {
+    if(isSmartphone){
+        document.getElementById("phoneName").InnerText = "Feature Phone";
+        document.getElementById("phoneImg").scr= "image.jpg";
+        document.getElementById("phone description").InnerText ="They are pocket-sized mobile devices that combine traditon  phone calling with advance computing power,  touchscreen,internet connectivity and app ecosystems."
+        document.getElementById("Feature List").InnerHTML ="<li>Operating Sydtem and Apps<li/> <li>Hardware Performance<li/li> <li>Connectivity and sensors<li/> <li>Security and Power<li/> "
     }
-];
+    isSmartphone = !isSmartphone;
 
-// Function to display phone information
-function showPhone(index) {
-    alert(
-        "Phone: " + phones[index].name +
-        "\nCamera: " + phones[index].camera +
-        "\nBattery: " + phones[index].battery +
-        "\nBest Use: " + phones[index].use
-    );
-}
+});
