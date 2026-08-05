@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
+    padding: 20px;
+    background:linear-gradient(to right, #f04671,#f0de3f) fixed;
+}
+nav a {
+    margin-right: 15px;
+    text-decoration: none;
+
+}
+input, textarea {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+}
+
+@media (max-width: 600px){
+body {
+    padding: 10PX;
+} 
+h1 {
+    font-size: 24PX;
+}
+ }
