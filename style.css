@@ -3,7 +3,7 @@ body {
     background-color: lightpink;
 }
 .card {
-background-color: palevioletred;
+background-color:linear-gradient(to right, #f04671,#f0de3f) fixed;
 padding: 20px;
 border-radius: 20px;
 max-width: min-content;
