@@ -1,3 +1,147 @@
+:root {
+    --card: rgba(255, 255, 255, 0.9);
+    --border: rgba(255, 255, 255, 0.28);
+    --text: #f8fafc;
+    --muted: #e5e7eb;
+    --accent: #ffd700;
+}
+
+body{
+    background: linear-gradient(to right, #f04671, #fade3f) fixed;
+    font-family: Arial, Helvetica, sans-serif; 
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: var(--text);
+}
+
+header{
+    background: #fade3f;
+    color: #f04671;
+    padding: 20px;
+}
+
+nav{
+    background: #f04671;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+nav a{
+    margin: 0 15px;
+    text-decoration: none;
+    color: beige;
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 12px;
+    font-size: 2rem;
+}
+
+.intro {
+    text-align: center;
+    color-scheme: inherit;
+    margin-bottom: 10px;
+}
+
+.nataliehome-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 10px;
+}
+
+.nataliehome-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,8fr));
+    gap: 10px;
+}
+
+@media (max-width:900px){
+    .home-gallery{
+        grid-template-columns:1fr
+    }
+    }
+
+    @media (max-width:600px){
+    .home-gallery{
+        grid-template-columns:1fr
+    }
+    }
+
+.nataliehome-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+.nataliehome-card:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.18);
+}
+
+.nataliehome-card img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.cards-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+    gap: 18px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto 40px;
+}
+
+.card-body{
+    padding: 14px;
+    text-align: left;
+    color: #222;
+    background: transparent;
+}
+
+.nataliehome-card h4{
+    margin: 0 0 6px;
+    color: #111;
+}
+
+
+/* Search controls */
+.search-controls{
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+#brand-search{
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(0,0,0,0.08);
+    width: 320px;
+}
+
+#brand-filter{
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(0,0,0,0.08);
+}
+
+@media (max-width:600px){
+    .search-controls{flex-direction:column;align-items:center}
+    #brand-search{width:220px}
+}
+
 body {
     font-family: 'Courier New', Courier, monospace;
     background: linear-gradient(to right, #f04671,#f0de3f) fixed;
@@ -8,8 +152,8 @@ header {
     background-color:#FFD54F;
     color:white;
     text-align:center;
-    padding:25px;
-     }
+    padding: 20px;
+}
 
 .card {
 background:linear-gradient(to right, #f04671,#f0de3f) fixed;
@@ -106,8 +250,8 @@ footer{
     padding:10px;
     background-color:#FFD54F;
     color:#880E4F;
-     }
 
+     }
 button {
     padding: 20px;
     margin: 10px;
@@ -118,6 +262,7 @@ button {
 }
 .dark.card {
     background: local;
+
 
 }
 .models-row {
