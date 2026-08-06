@@ -49,6 +49,9 @@ The website is designed to work on different screen sizes including:
 The contact section allows users to get in touch with the Mobile Hub team.
 It includes a contact form where users can enter their name, email address and message.
 This features make it easy for users to send inquiries, feedback or request assistance regarding the phones and services displayed on the website.
+### Contact
+-**Email:**
+ntlbrdgt@gmail.com
 
 ## Technologies used
 HTML-used to create the structure of the website.
