@@ -8,11 +8,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function filterCards(){
+        if(!searchInput || !filterSelect) return;
         const q = normalize(searchInput.value.trim());
         const category = filterSelect.value;
 
         cards.forEach(card => {
-            const brand = normalize(card.dataset.brand || card.querySelector('h4')?.textContent);
+            const brandAttr = normalize(card.dataset.brand || '');
+            const titleText = normalize(card.querySelector('h4')?.textContent || '');
+            const brand = (brandAttr + ' ' + titleText).trim();
             const cat = (card.dataset.category || '');
 
             const matchesQuery = q === '' || brand.includes(q);
@@ -22,9 +25,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    searchInput.addEventListener('input', filterCards);
-    filterSelect.addEventListener('change', filterCards);
-
-    // initial filter (in case user opens with query params later)
-    filterCards();
+    if (searchInput && filterSelect) {
+        searchInput.addEventListener('input', filterCards);
+        filterSelect.addEventListener('change', filterCards);
+        // initial filter (in case user opens with query params later)
+        filterCards();
+    }
 });
