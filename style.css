@@ -1,6 +1,6 @@
 body {
     font-family: 'Courier New', Courier, monospace;
-    background-color: lightpink;
+    background: linear-gradient(to right, #f04671,#f0de3f) fixed;
 }
 
 /* Header */
@@ -9,6 +9,7 @@ header {
     color:white;
     text-align:center;
     padding:25px;
+     }
 
 .card {
 background:linear-gradient(to right, #f04671,#f0de3f) fixed;
@@ -18,7 +19,7 @@ max-width: min-content;
 margin: 30 px;
 }
 .img {
-    width: 200;
+    width: 100;
     border-radius: 20px;
 }
 table {
@@ -98,13 +99,14 @@ tr:nth-child(even){
 tr:hover{
     background-color: Lightpink;
 }
-/ * footer style */
+/* footer style */
 footer{
     text-align:center;
     margin-top:20px;
     padding:10px;
     background-color:#FFD54F;
     color:#880E4F;
+     }
 
 button {
     padding: 20px;
@@ -117,4 +119,20 @@ button {
 .dark.card {
     background: local;
 
+}
+.models-row {
+    display: flex;
+    gap: 20PX;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.model-item {
+    text-align: center;
+    width: 120px;
+}
+.model-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 8px;
 }

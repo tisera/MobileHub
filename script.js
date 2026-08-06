@@ -1,6 +1,6 @@
 const darkBtn =document.getElementById("darkBtn");
 darkBtn.addEventListener("click", ()=> {
-    document.body.classlist.toggle("dark");
+    document.body.classList.toggle("dark");
 });
 
     
@@ -74,7 +74,7 @@ const phones = [
         use:"Has great zooming power"
     } ]
 
-<changeBtn.addEventListener("click", () => {
+changeBtn.addEventListener("click", () => {
     if(isSmartphone){
     
         document.getElementById("phoneName").InnerText = "Feature Phone";
@@ -84,7 +84,7 @@ const phones = [
         }else {
             
             document.getElementById("phoneName").InnerText="Smartphone";
-            document.getElementById("phoneImg").scr = "images.jgp";
+            document.getElementById("phoneImg").scr = "images.jpg";
             document.getElementById("phone description").InnerText ="   They are pocket-sized mobile devices that combine traditon <br> phone calling with advance computing power, <br> touchscreen,internet connectivity and app ecosystems.";
             document.getElementById("Feature list").InnerText="<li>Operating Sydtem and Apps<li/> <li>Hardware Performance<li/> <li>Connectivity and sensors<li/> <li>Security and Power<li/>"
             console.log("swicthed to Smartphone");
