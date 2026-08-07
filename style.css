@@ -1,7 +1,7 @@
 :root {
     --card: rgba(255, 255, 255, 0.9);
     --border: rgba(255, 255, 255, 0.28);
-    --text: #f8fafc;
+    --text: #0a0a0a;
     --muted: #e5e7eb;
     --accent: #ffd700;
 }
@@ -12,7 +12,7 @@ body{
     margin: 0;
     padding: 0;
     text-align: center;
-    color: var(--text);
+    color: #111827;
 }
 
 header{
@@ -206,14 +206,15 @@ h2, h3 {
 section {
     background-color:#FFF9C4;
     margin:20px 0;
-    padding:20 px;
+    padding:20px;
     border-radius: 8px;
-
+    color: #111827;
 }
 /* paragraphs */
 p{
     line-height:1.6;
     text-align: justify;
+    color: #111827;
 }
 /* table */
 table{
@@ -223,7 +224,7 @@ table{
 }
 th{
     background-color:#FBC02D;
-    color:white;
+    color:black;
     padding:12px;
 }
 
@@ -234,7 +235,7 @@ td{
 }
 
 table, th, td{
-    border: 1px solid #ccc;
+    border: 1px solid black;
 }
 
 tr:nth-child(even){
