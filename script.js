@@ -8,6 +8,7 @@ darkBtn.addEventListener("click", ()=> {
 
 const changeBtn = document.getElementById("changePhoneBtn");
 let isSmartphone =true;
+}
 
 
 // Phone information
@@ -18,12 +19,13 @@ const phones = [
         battery: "5000mAh",
         use: "Gaming and Multitasking"
     },
+
     {
         name: "iPhone 17",
         camera: "47mp Dual Camera",
         battery: "3561mAh",
         use: "Video Recording and Daily Use"
-    },
+     },
     {
         name: "Infinix 10",
         camera: "50MP AI Camera",
@@ -71,10 +73,10 @@ const phones = [
         name:"Google pixel",
         camera:"50mp tripple camera",
         battery:"5300mAh",
-        use:"Has great zooming power"
-    } ]
-
-changeBtn.addEventListener("click", () => {
+        use:"Has unique taste in technology",
+    },
+]
+changeBtn.addEventListener("click", function () {
     if(isSmartphone){
     
         document.getElementById("phoneName").InnerText = "Feature Phone";
@@ -90,30 +92,23 @@ changeBtn.addEventListener("click", () => {
             console.log("swicthed to Smartphone");
              
     }
-    isSmartphone = !isSmartphone;
- });
+   
+isSmartphone = !isSmartphone;
+});
 
-const comparison = document.getElementById("compareBtn");
-if(comparison){
-    comparison.addEventListener("click", function () {
-        document.getElementById("result").InnerHTML = "Comparison completed successfully!";
+const compareBtn =
+document.getElementById("compareBtn");
 
-    });
-}else {
-    console.log ("compareBtn not found in HTML");
-}
-    
+comparison.addEventListener("click" , function () {
 
 
 // Function to display phone information
-function showPhone(index) {
+function showPhone(index)  {
     alert(
         "Phone: " + phones[index].name +
         "\nCamera: " + phones[index].camera +
         "\nBattery: " + phones[index].battery +
-        "\nBest Use: " + phones[index].use
+        "\nBest Use: " + phones[index].use 
+
     );
-}
-
-
-
+} 
