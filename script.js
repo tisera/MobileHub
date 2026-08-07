@@ -1,10 +1,11 @@
-
-compareBtn.addEventListener("click" , function () {
-    document.getElementById("result").innerHTML =
-    "Comparison completed successfully!";
+const darkBtn =document.getElementById("darkBtn");
+darkBtn.addEventListener("click", ()=> {
+    document.body.classList.toggle("dark");
 });
 
-{
+    
+
+
 const changeBtn = document.getElementById("changePhoneBtn");
 let isSmartphone =true;
 }
@@ -77,11 +78,19 @@ const phones = [
 ]
 changeBtn.addEventListener("click", function () {
     if(isSmartphone){
+    
         document.getElementById("phoneName").InnerText = "Feature Phone";
-        document.getElementById("phoneImg").scr= "image.jpg";
-        document.getElementById("phone description").InnerText ="They are pocket-sized mobile devices that combine traditon  phone calling with advance computing power,  touchscreen,internet connectivity and app ecosystems."
-        document.getElementById("Feature List").InnerHTML ="<li>Operating Sydtem and Apps<li/> <li>Hardware Performance<li/li> <li>Connectivity and sensors<li/> <li>Security and Power<li/> "
+        document.getElementById("Feature List").InnerHTML ="<li>Operating Sydtem and Apps<li/> <li>Hardware Performance<li/> <li>Connectivity and sensors<li/> <li>Security and Power<li/> "
+        console.log("switch to feature phone");
 
+        }else {
+            
+            document.getElementById("phoneName").InnerText="Smartphone";
+            document.getElementById("phoneImg").scr = "images.jpg";
+            document.getElementById("phone description").InnerText ="   They are pocket-sized mobile devices that combine traditon <br> phone calling with advance computing power, <br> touchscreen,internet connectivity and app ecosystems.";
+            document.getElementById("Feature list").InnerText="<li>Operating Sydtem and Apps<li/> <li>Hardware Performance<li/> <li>Connectivity and sensors<li/> <li>Security and Power<li/>"
+            console.log("swicthed to Smartphone");
+             
     }
    
 isSmartphone = !isSmartphone;
@@ -92,10 +101,7 @@ document.getElementById("compareBtn");
 
 comparison.addEventListener("click" , function () {
 
-    document.getElementById("resuit").innerHTML =
-    "Comparison completed successfully!";
 
-});
 // Function to display phone information
 function showPhone(index)  {
     alert(
